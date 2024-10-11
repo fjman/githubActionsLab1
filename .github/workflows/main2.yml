@@ -1,6 +1,6 @@
 name: env_tutorial
 
-# Triggers the workflow when there is a push or pull request on the main branch
+# Triggers the workflow when there is a push or pull request on the main branch.
 on: 
   - pull_request
   - push
