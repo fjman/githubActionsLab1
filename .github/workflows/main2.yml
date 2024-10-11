@@ -11,7 +11,7 @@ on:
 
 env:
   # Sets environment variable
-  API_KEY: ${{ secrets.API_KEY }}
+  API_KEY: ${{ env.API_KEY_ENV }}
 
 jobs:
   job1:
@@ -20,7 +20,7 @@ jobs:
     steps:
       - name: step 1
         # Reference your environment variables
-        run: echo "The API key is: ${{ env.API_KEY }}"
+        run: echo "The API key is: ${{ env.API_KEY_ENV }}"
 
   job2:
     runs-on: ubuntu-latest
